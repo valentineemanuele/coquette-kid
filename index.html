@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Infantil Coquette</title>
+    <style>
+        /* Definições gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f1e0d6; /* Cor de fundo suave */
+            color: #5f4b56; /* Fonte amarronzada escura */
+        }
+
+        header {
+            background-color: #f8d1b3; /* Rosa antigo suave */
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo h1 {
+            font-size: 2rem;
+            color: #5f4b56; /* Rosa antigo escuro */
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #5f4b56;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #f8d1b3; /* Hover suave */
+        }
+
+        /* Estrutura principal */
+        .main-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 40px 30px;
+        }
+
+        /* Colunas laterais */
+        .sidebar-left, .sidebar-right {
+            width: 25%;
+            background-color: #fff; /* Balões laterais brancos */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .sidebar-left h2, .sidebar-right h2 {
+            font-size: 1.5rem;
+            color: #5f4b56; /* Tom amarronzado escuro */
+        }
+
+        .sidebar-left p, .sidebar-right p {
+            font-size: 1.1rem;
+            color: #5f4b56;
+        }
+
+        /* Seção Hero */
+        .hero {
+            background-color: #fff7f6; /* Rosa muito suave */
+            text-align: center;
+            padding: 50px 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            flex-grow: 1;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            color: #5f4b56;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #f78fb3;
+            margin: 15px 0;
+        }
+
+        .cta-button {
+            background-color: #f8d1b3;
+            color: #fff;
+            padding: 10px 30px;
+            border: none;
+            font-size: 1.1rem;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #f78fb3;
+            transform: scale(1.05);
+        }
+
+        /* Seção Sobre */
+        .about {
+            background-color: #f8e4e9;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2rem;
+            color: #5f4b56;
+        }
+
+        .about p {
+            font-size: 1.2rem;
+            color: #5f4b56;
+            margin-top: 10px;
+        }
+
+        /* Seção Loja */
+        .shop {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .product-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 200px;
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .product-card p {
+            font-size: 1.1rem;
+            margin: 10px 0;
+            color: #5f4b56;
+        }
+
+        .product-card button {
+            background-color: #f8d1b3;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .product-card button:hover {
+            background-color: #f78fb3;
+        }
+
+        /* Efeito hover nos botões de contato e navegação */
+        nav a, .sidebar-right button {
+            background-color: transparent;
+            color: #5f4b56;
+            padding: 10px 20px;
+            border-radius: 50px; /* Efeito de botão arredondado */
+            font-size: 1.1rem;
+            text-align: center;
+            display: inline-block;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin: 10px 0;
+            text-decoration: none;
+        }
+
+        nav a:hover, .sidebar-right button:hover {
+            background-color: #f8d1b3; /* Efeito rosa claro no hover */
+            color: #fff;
+            transform: translateY(-5px); /* Efeito de flutuação */
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #f8d1b3;
+            text-align: center;
+            padding: 20px;
+            color: #fff;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Meu Mundo Coquette</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Loja</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-container">
+        <div class="sidebar-left">
+            <h2>Novidades</h2>
+            <p>Confira as novidades da nossa coleção encantadora!</p>
+        </div>
+        <div class="hero">
+            <h2>Bem-vindo ao Mundo Coquette!</h2>
+            <p>Um lugar fofinho, cheio de cores e fofuras. Encontre tudo que você precisa para um dia perfeito.</p>
+            <button class="cta-button">Explore Agora</button>
+        </div>
+        <div class="sidebar-right">
+            <h2>Ofertas Especiais</h2>
+            <p>Veja as ofertas especiais que preparamos para você.</p>
+            <button>Ver Ofertas</button>
+        </div>
+    </div>
+    <div class="about">
+        <h2>Sobre Nós</h2>
+        <p>Somos uma marca dedicada ao estilo coquette, com produtos que combinam fofura e sofisticação. Vamos te encantar!</p>
+    </div>
+    <div class="shop">
+        <div class="product-card">
+            <img src="https://via.placeholder.com/200" alt="Produto 1">
+            <p>Produto 1</p>
+            <button>Comprar Agora</button>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/200" alt="Produto 2">
+            <p>Produto 2</p>
+            <button>Comprar Agora</button>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/200" alt="Produto 3">
+            <p>Produto 3</p>
+            <button>Comprar Agora</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Meu Mundo Coquette. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -47,7 +47,7 @@ Em breve, uma demonstração estará disponível.
 
 📖 Como Usar
 Clone este repositório:
-git clone https://github.com/seu-usuario/meu-mundo-coquette.git
+git clone https://github.com/valentineemanuele/meu-mundo-coquette.git
 Abra o arquivo index.html no navegador.
 📧 Contato
 Para mais informações ou feedbacks, entre em contato:
